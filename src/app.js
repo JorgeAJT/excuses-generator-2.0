@@ -10,7 +10,7 @@ window.onload = function() {
     "My grandma",
     "Peter Griffin",
     "Their brother",
-    "The dog",
+    "The dog"
   ];
   let action = ["ate", "peed", "crushed", "broke", "kissed"];
   let what = ["my homework", "my computer", "the car", "a sandwich", "an axe"];
@@ -19,7 +19,7 @@ window.onload = function() {
     "right now",
     "while I was working out",
     "during my lunch",
-    "before going to sleep",
+    "before going to sleep"
   ];
   let where = ["in the park", "in the bathroom", "in my room", "in the church"];
   // FUNCTION TO GET A RANDOM VALUE IN EVERY ARRAY
@@ -27,13 +27,13 @@ window.onload = function() {
     return excuseArray[Math.floor(Math.random() * excuseArray.length)];
   }
 
-  let randomWho = getRandomPosition(who);
-  let randomAction = getRandomPosition(action);
-  let randomWhat = getRandomPosition(what);
-  let randomWhen = getRandomPosition(when);
-  let randomWhere = getRandomPosition(where);
   // FUNCTION TO BUILD THE EXCUSE
   function getRandomExcuse() {
+    let randomWho = getRandomPosition(who);
+    let randomAction = getRandomPosition(action);
+    let randomWhat = getRandomPosition(what);
+    let randomWhen = getRandomPosition(when);
+    let randomWhere = getRandomPosition(where);
     return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen} ${randomWhere}`;
   }
 
